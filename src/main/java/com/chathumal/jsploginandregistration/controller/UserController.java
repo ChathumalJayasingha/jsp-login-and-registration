@@ -2,6 +2,7 @@ package com.chathumal.jsploginandregistration.controller;
 
 import com.chathumal.jsploginandregistration.entity.User;
 import com.chathumal.jsploginandregistration.service.UserService;
+import com.chathumal.jsploginandregistration.validator.UserValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,6 +19,11 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+
+    @Autowired
+    private UserValidator userValidator;
+
     @GetMapping("/registration")
     public String registration(Model model) {
         model.addAttribute("userForm", new User());
