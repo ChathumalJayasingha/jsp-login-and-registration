@@ -8,7 +8,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @SpringBootApplication
 public class JspLoginAndRegistrationApplication {
 
-
     public static void main(String[] args) {
         SpringApplication.run(JspLoginAndRegistrationApplication.class, args);
     }
